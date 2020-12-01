@@ -2,7 +2,7 @@
 <div dir='rtl' lang='he'>
  
 # Mario
-![mario](https://user-images.githubusercontent.com/58064644/100764131-ac475d80-33fe-11eb-86ac-8638cb87b24e.png)
+![mario](https://user-images.githubusercontent.com/58064644/100764249-cf720d00-33fe-11eb-8cf0-a42f0310ce84.png)
  
  
 במשחק בנינו ארבעה שלבים, 
