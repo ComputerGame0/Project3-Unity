@@ -51,6 +51,8 @@ impulse < minImpulseForExplosion <br />
 ללא הכנפיים אין למריו את היכולת לעבור את השלב.<br />
 <br />בקוד: זיהינו התנגשות, ברגע המפגש הכנפיים הופכות להיות 
 ה parent של מריו
+<br />
+[תלחץ כאן על מנת לראות את הקוד האחראי](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/MovingPlatform.cs)
 
 
 ![wings1](https://user-images.githubusercontent.com/57682267/100767244-33e29b80-3402-11eb-9fd6-13b627fbb97d.jpg)
@@ -64,6 +66,7 @@ impulse < minImpulseForExplosion <br />
 
 
 הקוד האחראי על שינוי המהירות של מריו  :<br />
+<br />
 [תלחץ כאן על מנת לראות את הקוד האחראי](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/WindVelocity.cs)
 
 
@@ -71,8 +74,11 @@ impulse < minImpulseForExplosion <br />
 
 
 על מנת לעבור לשלב הבא :
+[תלחץ כאן על מנת לראות את הקוד האחראי](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/NextLevel.cs)
+<br />
 
 ![next levelpng](https://user-images.githubusercontent.com/57682267/100767335-507ed380-3402-11eb-827f-af75a6a1bcab.png)
+
 
 לאחר שמריו עבר את כל השלבים :
 
