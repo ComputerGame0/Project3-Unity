@@ -16,7 +16,7 @@
 ברגע שמריו מתנגש בפלטפורמה, הוא יתפס עליה ולא יפול ממנה עד שיקפוץ ממנה.
 הקוד שאחראי על הצמדות לפלטפורמה:
 
-[תלחץ כאן](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/MovingPlatform.cs)
+[תלחץ כאן על מנת לראות את הקוד האחראי](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/MovingPlatform.cs)
 
 
 ![madaf](https://user-images.githubusercontent.com/57682267/100767137-144b7300-3402-11eb-81f9-ddde0543fecc.jpg)
@@ -37,6 +37,8 @@
 נשתמש בשאלה זו : <br />
 impulse < minImpulseForExplosion <br />
  הינו הכח הימינימלי שצריך לפהעיל על מנת לנצח את האויב minImpulseForExplosion  כאשר 
+<br />
+[תלחץ כאן על מנת לראות את הקוד האחראי](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/OnTriggerEnemy.cs)
 <br />
 ![level2](https://user-images.githubusercontent.com/57682267/100767194-26c5ac80-3402-11eb-8ef7-1f61f052a45a.jpg)
 
@@ -62,6 +64,7 @@ impulse < minImpulseForExplosion <br />
 
 
 הקוד האחראי על שינוי המהירות של מריו  :<br />
+[תלחץ כאן על מנת לראות את הקוד האחראי](https://github.com/ComputerGame0/Project3-Unity/blob/main/Assets/Scripts/WindVelocity.cs)
 
 
 ![hanan](https://user-images.githubusercontent.com/57682267/100767282-40ff8a80-3402-11eb-85c5-5eb668732fdd.png)
