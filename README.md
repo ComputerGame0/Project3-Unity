@@ -16,22 +16,22 @@
 ברגע שמריו מתנגש בפלטפורמה, הוא יתפס עליה ולא יפול ממנה עד שיקפוץ ממנה.
 הקוד שאחראי על הצמדות לפלטפורמה:
 
-private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.GetComponent<KeyBoard2D>())
-        {
-            other.transform.parent = this.transform;
-        }
-    }
+private void OnTriggerEnter2D(Collider2D other) <br />
+    { <br />
+        if (other.gameObject.GetComponent<KeyBoard2D>()) <br />
+        { <br />
+            other.transform.parent = this.transform; <br />
+        } <br />
+    } <br />
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.GetComponent<KeyBoard2D>())
-        {
-            other.transform.parent = null;
-        }
+    private void OnTriggerExit2D(Collider2D other) <br />
+    { <br />
+        if (other.gameObject.GetComponent<KeyBoard2D>()) <br />
+        { <br />
+            other.transform.parent = null; <br />
+        } <br />
     }
-    
+     <br />
 
 ![madaf](https://user-images.githubusercontent.com/57682267/100767137-144b7300-3402-11eb-81f9-ddde0543fecc.jpg)
 
@@ -75,16 +75,16 @@ impulse < minImpulseForExplosion <br />
 ויצטרך לעבור את אזור הענן כדי לחזור למהירותו המקורית.<br />
 
 
-הקוד האחראי על שינוי המהירות של מריו  :
- void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == triggeringTag)
-        {
-            Debug.Log("Object is in trigger");
-            rb.velocity = rb.velocity * v;
-        }
+הקוד האחראי על שינוי המהירות של מריו  :<br />
+ void OnTriggerStay2D(Collider2D other)<br />
+    {<br />
+        if (other.gameObject.tag == triggeringTag)<br />
+        {<br />
+            Debug.Log("Object is in trigger");<br />
+            rb.velocity = rb.velocity * v;<br />
+        }<br />
 
-    } 
+    } <br />
 
 ![hanan](https://user-images.githubusercontent.com/57682267/100767282-40ff8a80-3402-11eb-85c5-5eb668732fdd.png)
 
