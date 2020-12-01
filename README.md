@@ -14,6 +14,24 @@
 <br />.וצריך להזהר לא ליפול למים, אחרת יחזור לתחילת השלב
 ישנם פלטפורמות הבאות לעזרתו לאסיפת המטבעות הנמצאות גבוה
 ברגע שמריו מתנגש בפלטפורמה, הוא יתפס עליה ולא יפול ממנה עד שיקפוץ ממנה.
+הקוד שאחראי על הצמדות לפלטפורמה:
+
+private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<KeyBoard2D>())
+        {
+            other.transform.parent = this.transform;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<KeyBoard2D>())
+        {
+            other.transform.parent = null;
+        }
+    }
+    
 
 ![madaf](https://user-images.githubusercontent.com/57682267/100767137-144b7300-3402-11eb-81f9-ddde0543fecc.jpg)
 
@@ -29,7 +47,11 @@
 מריו יצליח להביס את הפטריות.<br />
 <br />במידה ומריו לא הפעיל מספיק כח
 מריו יפסל ויחזור לתחילת השלב.<br />
-
+כאשר נרצה לבדוק האם מריו הפעיל מספיק בכוח 
+נשתמש בשאלה זו : <br />
+impulse < minImpulseForExplosion <br />
+ הינו הכח הימינימלי שצריך לפהעיל על מנת לנצח את האויב minImpulseForExplosion  כאשר 
+<br />
 ![level2](https://user-images.githubusercontent.com/57682267/100767194-26c5ac80-3402-11eb-8ef7-1f61f052a45a.jpg)
 
 
@@ -41,7 +63,8 @@
 ללא הכנפיים אין למריו את היכולת לעבור את השלב.<br />
 <br />בקוד: זיהינו התנגשות, ברגע המפגש הכנפיים הופכות להיות 
 ה parent של מריו
- 
+
+
 ![wings1](https://user-images.githubusercontent.com/57682267/100767244-33e29b80-3402-11eb-9fd6-13b627fbb97d.jpg)
  
  
@@ -50,6 +73,18 @@
 <br />ברגע המפגש של מריו עם טווח הרוח
 <br />קצב ההליכה של מריו יורד
 ויצטרך לעבור את אזור הענן כדי לחזור למהירותו המקורית.<br />
+
+
+הקוד האחראי על שינוי המהירות של מריו  :
+ void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == triggeringTag)
+        {
+            Debug.Log("Object is in trigger");
+            rb.velocity = rb.velocity * v;
+        }
+
+    } 
 
 ![hanan](https://user-images.githubusercontent.com/57682267/100767282-40ff8a80-3402-11eb-85c5-5eb668732fdd.png)
 
